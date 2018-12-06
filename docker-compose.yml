@@ -1,9 +1,10 @@
 version: "2"
 services:
   supernumber:
+    restart: always
     image: supernumber:latest
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:80"
+      - "80:80"
